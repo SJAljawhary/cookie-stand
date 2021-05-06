@@ -37,7 +37,7 @@ function store(locName, minCustperHr, maxCustPerHr, avgCookies) {
 
             this.randomCustom.push(random(this.minCustperHr, this.maxCustperHr));
         }
-        console.log(this);
+        
     },
 
         store.prototype.cookiesPerhour = function () {
