@@ -10,16 +10,41 @@
         td{
             border: 1px black solid;
         }
+
     </style>
 </head>
 
 <body>
 
-     <div id="cookies"></div>
-     
 
+
+    <form action="" id="locationForm">
+
+    <fieldset>
+        <!-- (locName, minCustperHr, maxCustPerHr, avgCookies)  -->
+        <legend>Adding a new location </legend>
+
+        <label for="locName">Location Name</label>
+        <input type="text" id="locName" name="locName" placeholder="location name">
+
+        <label for="minCustperHr">Minimum Customers/Hour</label>
+        <input type="text" id="minCustperHr" name="minCustperHr" placeholder="integer number"> 
+
+        <label for="maxCustPerHr">Maximum Customers/Hour</label>
+        <input type="text" id="maxCustPerHr" name="maxCustPerHr" placeholder="integer number"> 
+
+        <label for="avgCookies">Sales cookies/Hour</label>
+        <input type="text" id="avgCookies" name="avgCookies" placeholder="avg number"> 
+
+        <input type="submit" value="add a location">
+
+
+
+    </fieldset>
+
+    </form>
+     <div id="cookies" ></div>
   
-    
     <script src="app.js"></script>
 </body>
 
