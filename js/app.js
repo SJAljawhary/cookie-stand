@@ -161,7 +161,7 @@ function addALocation(event){
    let maxCustPerHr = parseInt(event.target.maxCustPerHr.value);
    let avgCookies = parseFloat(event.target.avgCookies.value);
 
-   let newStore = new store (locName, minCustperHr, maxCustPerHr, avgCookies )
+   let newStore = new Store(locName, minCustperHr, maxCustPerHr, avgCookies );
 
     tableEl.deleteTFoot();
     
