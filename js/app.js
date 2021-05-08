@@ -106,7 +106,7 @@ function footerRow() {
     tableEl.appendChild(footerRow);
     let tableR2 = document.createElement('tr');
     footerRow.appendChild(tableR2);
-    let tabledata = document.createElement('th');
+    let tabledata = document.createElement('td');
     tableR2.appendChild(tabledata);
     tabledata.textContent = 'Totals';
     let totalAllhours = 0;
@@ -118,11 +118,11 @@ function footerRow() {
         }
         
     
-    let tablehdata2 = document.createElement('th');
+    let tablehdata2 = document.createElement('td');
     tableR2.appendChild(tablehdata2);
     tablehdata2.textContent = totalPerhours;
 }
-let tableCell = document.createElement('th');
+let tableCell = document.createElement('td');
 tableR2.appendChild(tableCell);
 tableCell.textContent = totalAllhours;
 }
