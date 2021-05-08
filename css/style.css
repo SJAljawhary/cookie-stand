@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+  }
+  h1, h2, h3, h4, p {
+    color: rgb(65, 0, 59);
+    font-family: 'Oswald', sans-serif;
+  }
+  h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 2.125em;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  p {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  span{
+    color: rgb(65, 0, 59);
+    font-size: 1em;
+    font-weight: 400;
+  }
+  pre{
+    color: rgb(65, 0, 59);
+    font-size: 1em;
+    font-weight: 400;
+  }
+  em {
+    text-decoration: none;
+    font-size: 1em;
+    font-style: italic;
+  }
+  div {
+    display: block;
+  }
+ 
+#home{
+    background-attachment: fixed;
+    background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fassets.marthastewart.com%2Fstyles%2Fwmax-750%2Fd29%2Fsugar-cookie-hearts-102864726%2Fsugar-cookie-hearts-102864726_horiz.jpg%3Fitok%3DZfcyZSEo&q=85);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px -13px 35px 14px #666;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    
+  }
+ #home::before {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  #addr a{
+    color: rgb(65, 0, 59);
+    text-decoration: none;
+    padding-left:5px;
+    font-size: 35px;
+  }
+#addr li {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+ .fullWidth {
+    position: relative;
+    height:150vh;
+    width:100%;
+    text-align:center;
+    box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  #top {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 15px;
+    position: relative;
+    font-family: oswald;
+    font-size: 2.25em;
+    width: 98vw;
+    height: 50px;
+  }
+  #top a {
+    color: rgb(65, 0, 59);
+    text-decoration: none;
+    padding-left:5px;
+  }
+  #top li {
+    vertical-align: bottom;
+    display: inline;
+    position: relative;
+    transition: all ease .3s;
+  }
+  #top li:hover {
+    background: pink;
+  }
+  #top li::before {
+    content: "";
+    position: absolute;
+    top:4px;
+    left:0;
+    bottom:0;
+    border-left: solid 1px white;
+    height: 80%;
+  }
+
+#logoContainer {
+    position: absolute;
+    left: 0;
+    width: 50vw;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  #logoContainer{
+    bottom:0;  
+  }
+#logo {
+    width:200px;
+    vertical-align: middle;
+    transition: all ease-in-out 3s;
+  }
+  #logo:hover {
+    transform: rotate(1080deg);
+  }
+  
+  .textContainer {
+    display:inline-block;
+    vertical-align: middle;
+  }
+ .textContainer h1 {
+    font-size: 5em;
+    border-bottom: solid 2px white;
+  }
+.textContainer h2 {
+    font-size: 1.5em;
+  }
+  
+
+  #about {
+    background: pink;
+    height: 900px;
+  }
+
+.border{
+    border-radius: 50%;
+}
+#imageLeft{
+    margin-right: 200px;
+}
+#imageRight{
+    margin-left: 330px;
+}
+  #about ul li{
+      
+      text-align: left;
+  }
+ 
+  #last {
+    background:  #ffa8B6;
+    height: 250px;
+  }
+
+  #end{
+    background-color: pink;
+    height: 250px;
+  }
+  
+  
