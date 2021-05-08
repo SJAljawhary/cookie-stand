@@ -18,7 +18,7 @@ function random(minCust, maxCust) {
 
 
 let locations = [];
-function store(locName, minCustperHr, maxCustPerHr, avgCookies) {
+function Store(locName, minCustperHr, maxCustPerHr, avgCookies) {
 
     this.locName = locName;
     this.minCustperHr = minCustperHr;
@@ -31,7 +31,7 @@ function store(locName, minCustperHr, maxCustPerHr, avgCookies) {
     locations.push(this)
 
 
-    store.prototype.custPerhour = function () {
+    Store.prototype.custPerhour = function () {
 
         for (let hour = 0; hour < workHour.length; hour++) {
 
@@ -40,7 +40,7 @@ function store(locName, minCustperHr, maxCustPerHr, avgCookies) {
         
     },
 
-        store.prototype.cookiesPerhour = function () {
+    Store.prototype.cookiesPerhour = function () {
 
 
             this.custPerhour();
@@ -52,7 +52,7 @@ function store(locName, minCustperHr, maxCustPerHr, avgCookies) {
 
             }
         };
-    store.prototype.render = function () {
+        Store.prototype.render = function () {
         let tableR = document.createElement('tr');
         tableEl.appendChild(tableR);
         let tableData = document.createElement('td') ;
@@ -70,11 +70,11 @@ function store(locName, minCustperHr, maxCustPerHr, avgCookies) {
     }
 }
 
-let Seattle = new store('Seattle', 23, 65, 6.3);
-let Tokyo = new store('Tokyo', 3, 24, 1.2);
-let Dubai = new store('Dubai', 11, 38, 3.7);
-let Paris = new store('Paris', 20, 38, 2.3);
-let Lima = new store('Lima', 2, 16, 4.6);
+let Seattle = new Store('Seattle', 23, 65, 6.3);
+let Tokyo = new Store('Tokyo', 3, 24, 1.2);
+let Dubai = new Store('Dubai', 11, 38, 3.7);
+let Paris = new Store('Paris', 20, 38, 2.3);
+let Lima = new Store('Lima', 2, 16, 4.6);
 
 
 
@@ -102,7 +102,7 @@ function headerRow() {
 function footerRow() {
     let tableR2 = document.createElement('tr');
     tableEl.appendChild(tableR2);
-    let tabledata = document.createElement('td');
+    let tabledata = document.createElement('th');
     tableR2.appendChild(tabledata);
     tabledata.textContent = 'Totals';
     let totalAllhours = 0;
@@ -114,11 +114,11 @@ function footerRow() {
         }
         
     
-    let tablehdata2 = document.createElement('td');
+    let tablehdata2 = document.createElement('th');
     tableR2.appendChild(tablehdata2);
     tablehdata2.textContent = totalPerhours;
 }
-let tableCell = document.createElement('td');
+let tableCell = document.createElement('th');
 tableR2.appendChild(tableCell);
 tableCell.textContent = totalAllhours;
 }
