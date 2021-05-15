@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
         td {
-            border: 1px white;
+            border: 1px black;
+            font-weight: bold;
+            
 
         }
 
@@ -24,13 +27,17 @@
 
         }
 
-        th,
-        td {
+        th,td {
             text-align: left;
             padding: 8px;
         }
 
         tr:nth-child(even) {
+            background-color:burlywood;
+            
+        }
+
+        tr:nth-child(odd) {
             background-color: #f2f2f2
         }
 
@@ -43,6 +50,17 @@
 </head>
 
 <body>
+    <nav id="top">
+        <ul>
+          <li><a href="index.html" title="Home Page">Home</a></li>
+          <li><a href="sales.html" title="Sales Data">Sales</a></li>
+          <li><a href="location.html" title="Find Location">Location</a></li>
+          <li><a href="about.html" title="About">About</a></li>
+          <li><a href="contact us.html" title="Contact Us">Contact Us</a></li>
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+        </ul>
+      </nav>
     <header>
         <h2 style="font-family: 'Caveat', cursive; ;font-size: 40px; text-align: center;color: saddlebrown;">Pat Salmon
             Cookies</h2>
@@ -80,7 +98,6 @@
             padding: 15px 30px;
             text-decoration: none;
             font-size: 16px;
-            cursor: pointer;
             font-weight: bold;
             float: right;" type="submit" value="add a location">
 
