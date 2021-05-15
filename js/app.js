@@ -1,7 +1,7 @@
 'use strict';
 
-
 let workHour = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm'];
+
 
 
 
@@ -106,7 +106,7 @@ function footerRow() {
     tableEl.appendChild(footerRow);
     let tableR2 = document.createElement('tr');
     footerRow.appendChild(tableR2);
-    let tabledata = document.createElement('td');
+    let tabledata = document.createElement('th');
     tableR2.appendChild(tabledata);
     tabledata.textContent = 'Totals';
     let totalAllhours = 0;
@@ -118,11 +118,11 @@ function footerRow() {
         }
         
     
-    let tablehdata2 = document.createElement('td');
+    let tablehdata2 = document.createElement('th');
     tableR2.appendChild(tablehdata2);
     tablehdata2.textContent = totalPerhours;
 }
-let tableCell = document.createElement('td');
+let tableCell = document.createElement('th');
 tableR2.appendChild(tableCell);
 tableCell.textContent = totalAllhours;
 }
@@ -143,7 +143,6 @@ Lima.custPerhour();
 Lima.cookiesPerhour();
 Lima.render();
 footerRow();
-
 
 
 
@@ -169,10 +168,4 @@ function addALocation(event){
    newStore.cookiesPerhour();
    newStore.render();
    footerRow();
-
-
-
-
-
 }
-
