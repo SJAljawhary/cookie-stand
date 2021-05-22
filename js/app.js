@@ -18,15 +18,20 @@ let Seattle = {
     salesCookies: [],
     totalSum: 0,
 
-
+  
     custPerhour: function () {
         for (let hour = 0; hour < this.workHour.length; hour++) {
 
             this.randomCustom.push(random(this.minCustperHr, this.maxCustperHr));
+
+           
         }
         console.log(this);
-    },
+        console.log(this.randomCustom);
 
+
+    },
+    
     cookiesPerhour: function () {
 
         this.custPerhour();
